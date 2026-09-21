@@ -3,31 +3,31 @@
 ## Initial Setup
 
 1. **Own and have Deliria installed.**
-   You'll need roughly **[X] GB** of free disk space (custom engine + intermediate build files).
+   You'll need roughly **30 GB** of free disk space (custom engine + intermediate build files).
 
 2. **Link your Epic Games and GitHub accounts.**
-   Without this, the custom engine download link will return a 404.
-
-3. **Install the custom UE5.6 engine build.**
+   If you haven't done so already, [follow these instructions on linking your Epic Games and GitHub accounts.](https://www.epicgames.com/help/account-c-45487929/linked-accounts-c-38854402/how-do-i-link-my-unreal-engine-account-with-my-github-account-a13858315). If you don't do this, the below custom engine link will return a 404 not found.
+   
+4. **Install the custom UE5.6 engine build.**
    - Install close to the drive root (long paths can break the build)
    - Avoid spaces anywhere in the install path
    - Use an SSD/NVMe, not an HDD
 
-4. **Install Visual Studio 2022** with the **MSVC v14.38 toolchain** selected — required to open the project at all.
+5. **Install Visual Studio 2022** with the **MSVC v14.38 toolchain** selected — required to open the project at all.
 
-5. **Clone (don't zip-download) the `DeliriaModKit` repo.**
+6. **Clone (don't zip-download) the `DeliriaModKit` repo.**
    Cloning via git makes it easy to pull future updates; a zip download doesn't.
 
-6. **Set your game install path.**
+7. **Set your game install path.**
    Open `GameInstallDirectory.txt` and paste in your Deliria install path — the folder containing `Deliria-Win64-Shipping.exe`.
 
-7. **Switch the engine version.**
+8. **Switch the engine version.**
    Right-click `Deliria.uproject` → **Switch Unreal Engine version**, and point it at the folder containing the custom engine's `Engine` folder.
 
-8. **Open `Deliria.uproject`.**
+9. **Open `Deliria.uproject`.**
    First launch compiles a few plugins — expect 2–10 minutes depending on your hardware.
 
-9. **Confirm content is visible in the Content Browser.**
+10. **Confirm content is visible in the Content Browser.**
    Everything here is **read-only** — the editor may let you edit values, but nothing saves back to the cooked package.
 
    > See [Exporting Content for Mods] for how to get an editable, uncooked copy of assets.
