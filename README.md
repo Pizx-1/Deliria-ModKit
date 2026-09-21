@@ -15,11 +15,10 @@
 
 5. **Install Visual Studio 2022** with the **MSVC v14.38 toolchain** selected — required to open the project at all.
 
-6. **Clone (don't zip-download) the `DeliriaModKit` repo.**
-   Cloning via git makes it easy to pull future updates; a zip download doesn't.
+6. **Clone the `DeliriaModKit` repo.**
 
 7. **Set your game install path.**
-   Open `GameInstallDirectory.txt` and paste in your Deliria install path — the folder containing `Deliria-Win64-Shipping.exe`.
+   Open `GameInstallDirectory.txt` and paste in your Deliria install path — the folder containing `Binary and content folders`.
 
 8. **Switch the engine version.**
    Right-click `Deliria.uproject` → **Switch Unreal Engine version**, and point it at the folder containing the custom engine's `Engine` folder.
