@@ -1,6 +1,7 @@
 # Deliria Modding — Setup Guide
 
 ## Initial Setup
+NOW I CANNOT STRESS ENOUGH THAT THIS IS ALL A BETA AND JUST A TEST, IF IT DOES NOT WORK FOR YOU THEN SEND A COMMENT SO I CAN UPDATE THE PROJECT
 
 1. **Own and have Deliria installed.**
    You'll need roughly **30 GB** of free disk space (custom engine + intermediate build files).
@@ -17,8 +18,9 @@
 5. **Install Visual Studio 2022** with the **MSVC v14.38 toolchain** selected — required to open the project at all.
 
 6. **Clone the `DeliriaModKit` repo.**
+   Or download it whatever, just have the zip on file and extract it
 
-7. **Set your game install path.**
+8. **Set your game install path.**
     Open GameInstallDirectory.txt and paste in your Deliria install path — the folder that contains the Binaries and Content folders.
 
 9. **Switch the engine version.**
