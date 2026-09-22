@@ -8,28 +8,27 @@
 2. **Link your Epic Games and GitHub accounts.**
    If you haven't done so already, [follow these instructions on linking your Epic Games and GitHub accounts.](https://www.epicgames.com/help/account-c-45487929/linked-accounts-c-38854402/how-do-i-link-my-unreal-engine-account-with-my-github-account-a13858315). If you don't do this, the below custom engine link will return a 404 not found.
    
-4. **Install the custom UE5.6 engine build.**
+4. **Install the [custom UE5.6 engine build.](https://github.com/Buckminsterfullerene02/UnrealEngine/releases/tag/sn2-v0.1.2.0)**
    - Install close to the drive root (long paths can break the build)
    - Avoid spaces anywhere in the install path
    - Use an SSD/NVMe, not an HDD
+   - This currently uses the Subnautica 2 custom engine, since Deliria doesn't require any engine-level changes beyond it. A dedicated Deliria/generic-UE5.6 engine build is planned for a future version.
 
 5. **Install Visual Studio 2022** with the **MSVC v14.38 toolchain** selected — required to open the project at all.
 
 6. **Clone the `DeliriaModKit` repo.**
 
 7. **Set your game install path.**
-   Open `GameInstallDirectory.txt` and paste in your Deliria install path — the folder containing `Binary and content folders`.
+    Open GameInstallDirectory.txt and paste in your Deliria install path — the folder that contains the Binaries and Content folders.
 
-8. **Switch the engine version.**
+9. **Switch the engine version.**
    Right-click `Deliria.uproject` → **Switch Unreal Engine version**, and point it at the folder containing the custom engine's `Engine` folder.
 
-9. **Open `Deliria.uproject`.**
+10. **Open `Deliria.uproject`.**
    First launch compiles a few plugins — expect 2–10 minutes depending on your hardware.
 
-10. **Confirm content is visible in the Content Browser.**
+11. **Confirm content is visible in the Content Browser.**
    Everything here is **read-only** — the editor may let you edit values, but nothing saves back to the cooked package.
-
-   > See [Exporting Content for Mods] for how to get an editable, uncooked copy of assets.
 
 ---
 
